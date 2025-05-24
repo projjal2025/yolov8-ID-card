@@ -14,10 +14,14 @@ This is a novel three-stage computer vision framework as a sustainable engineeri
 ## CONTENT
 
 1. [Introduction](https://github.com/projjal2025/yolov8-ID-card/blob/main/README.md#introduction)
-2. 
+   - [Error Level Analysis (ELA) Module]()
+   - [YOLOv8-based CPTBA Detection]()
+   - [Tampering Field Localization]()
+3. [Features]()
+4. [Flow-diagram]()
 
 
-## Introduction:
+## ✨ Introduction:
 This repository introduces a three-stage computer vision framework designed to validate ID cards by detecting Copy Paste Tampering Boundary Artefacts (CPTBA) signatures. These signatures are tell-tale signs of copy-paste forgery in crucial ID card fields. The framework operates as follows:
 
 ### 1. Error Level Analysis (ELA) Module:
@@ -28,13 +32,13 @@ This repository introduces a three-stage computer vision framework designed to v
    The final stage leverages the CPTBA detection results from YOLOv8 to generate a refined bounding box, precisely localizing the tampered field in the original ID card image.
 This framework was developed and extensively tested using a custom dataset due to the absence of publicly available standard ID card image datasets. Our experiments demonstrate its viability and improved performance compared to standalone Error Level Analysis (ELA), a common copy-paste forgery detection technique.
 
-## Features:
+## ✨ Features:
 1. Takes very less time to test large amount of identity documents in image format.
 2. Fully functional on Google Colab with the help of Google drive.
 3. Higher accuracy (95%) from trained on very small dataset.
 4. Saving/Resuming training after any epoch.
 5. It can be worked on any type of documents(like: Id card, Invoice, legal documents, raw image).
 
-## Flow-diagram:
+## ✨ Flow-diagram:
 <img src="https://github.com/projjal2025/yolov8-ID-card/blob/main/assets/propsed_framework.png" alt="flow-diagram"/>
 

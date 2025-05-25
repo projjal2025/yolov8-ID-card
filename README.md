@@ -49,8 +49,33 @@ This framework was developed and extensively tested using a custom dataset due t
 Due to non-availability of a standard ID-card dataset, I created a dataset with the help of 130 students of my college. From 130 images, I created 105 forgery images consisted of **changed ID-photo, changed person name and changed person signature**.<br/>Now, 5 images are for testing and remaining 100 forgery images I divided them in **4 : 1** ratio for train and validation while training the Yolov8 model.<br/>For producing the forgery ID-card images I used [photopea.com](https://www.photopea.com/), it is a free alternative of Adobe photoshop, a web based application where you will get all greate features of Photoshop (Not promoting, it's truely amazing...👌)
 
 ### 2. <ins/>Labelling the dataset:</ins>
-As here I used the Yolov8 model for object detection so, here the bounding box annotation was needed. For annotation I used LabelImg tool, you can go to it's github repository [get here](https://github.com/HumanSignal/labelImg) and install accordingly. After that, keep the labelling data of train and validation images in the label folder inside of train and val folder in your project root directory which will be later uploaded on Google drive. Also, before opening make sure a classes.txt file is ready which will be contained the class name whichever objects you want to be detected by Yolov8.<br/>
+As here I used the Yolov8 model for object detection so, here the bounding box annotation was needed. For annotation I used LabelImg tool, you can go to it's github repository [get here](https://github.com/HumanSignal/labelImg) and install accordingly. After that, keep the labelling data of train and validation images in the 'label' folder inside of 'train' and 'val' folder in your project root directory which will be later uploaded on Google drive. Also, before opening make sure a classes.txt file is ready which will be contained the class name whichever objects you want to be detected by Yolov8.<br/>
 You can see the demo video [here](https://youtu.be/p0nR2YsCY_U?si=LLlsL14_8teorXTu).
 
 ### 3. <ins>Google drive folder arrangement:</ins>
-As, I 
+I had done the whole project on Google colab with using Google drive. So, I gave the full folder arrangement in the 'googleDrive' folder in this repository you can refer to them.
+<pre>
+  <code>
+    Project_Name
+    ├── train
+    │   ├── images
+    │   ├── labels
+    ├── val
+    │   ├── images
+    │   ├── labels
+    ├── test
+    |   ├── real_image
+    │   ├── ELA_image
+    │   ├── predicted_image
+    ├── runs
+    ├── classes.txt
+    ├── data_custom.yaml
+    ├── yolov8n.pt
+    ├── yolov8x.pt
+    ├── ELA_Converter.ipynb
+    ├── ID_card_testing.ipynb
+    ├── ID_card_training.ipynb
+    |__ weights.pt
+  </code>
+</pre>
+

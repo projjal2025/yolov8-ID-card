@@ -44,7 +44,7 @@ This framework was developed and extensively tested using a custom dataset due t
 <img src="https://github.com/projjal2025/yolov8-ID-card/blob/main/assets/propsed_framework.png" alt="flow-diagram"/>
 <p>** This is a simple flow-diagram of the framework. **</p>
 
-## ✨ Train and Test pn your custom dataset:
+## ✨ Train and Test on your custom dataset:
 ### 1. <ins>Dataset preparation:</ins>
 Due to non-availability of a standard ID-card dataset, I created a dataset with the help of 130 students of my college. From 130 images, I created 105 forgery images consisted of **changed ID-photo, changed person name and changed person signature**.<br/>Now, 5 images are for testing and remaining 100 forgery images I divided them in **4 : 1** ratio for train and validation while training the Yolov8 model.<br/>For producing the forgery ID-card images I used [photopea.com](https://www.photopea.com/), it is a free alternative of Adobe photoshop, a web based application where you will get all greate features of Photoshop (Not promoting, it's truely amazing...👌)
 

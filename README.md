@@ -38,7 +38,19 @@ This framework was developed and extensively tested using a custom dataset due t
 3. Higher accuracy (95%) from trained on very small dataset.
 4. Saving/Resuming training after any epoch.
 5. It can be worked on any type of documents(like: Id card, Invoice, legal documents, raw image).
+6. Work with your custom dataset.
 
 ## ✨ Flow-diagram:
 <img src="https://github.com/projjal2025/yolov8-ID-card/blob/main/assets/propsed_framework.png" alt="flow-diagram"/>
+<p>** This is a simple flow-diagram of the framework. **</p>
 
+## ✨ Train and Test pn your custom dataset:
+### 1. <ins>Dataset preparation:</ins>
+Due to non-availability of a standard ID-card dataset, I created a dataset with the help of 130 students of my college. From 130 images, I created 105 forgery images consisted of **changed ID-photo, changed person name and changed person signature**.<br/>Now, 5 images are for testing and remaining 100 forgery images I divided them in **4 : 1** ratio for train and validation while training the Yolov8 model.<br/>For producing the forgery ID-card images I used [photopea.com](https://www.photopea.com/), it is a free alternative of Adobe photoshop, a web based application where you will get all greate features of Photoshop (Not promoting, it's truely amazing...👌)
+
+### 2. <ins/>Labelling the dataset:</ins>
+As here I used the Yolov8 model for object detection so, here the bounding box annotation was needed. For annotation I used LabelImg tool, you can go to it's github repository [get here](https://github.com/HumanSignal/labelImg) and install accordingly. After that, keep the labelling data of train and validation images in the label folder inside of train and val folder in your project root directory which will be later uploaded on Google drive. Also, before opening make sure a classes.txt file is ready which will be contained the class name whichever objects you want to be detected by Yolov8.<br/>
+You can see the demo video [here](https://youtu.be/p0nR2YsCY_U?si=LLlsL14_8teorXTu).
+
+### 3. <ins>Google drive folder arrangement:</ins>
+As, I 

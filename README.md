@@ -75,7 +75,7 @@ I had done the whole project on Google colab with using Google drive. So, I gave
     ├── ELA_Converter.ipynb
     ├── ID_card_testing.ipynb
     ├── ID_card_training.ipynb
-    |__ weights.pt
+    └── weights.pt
   </code>
 </pre>
 

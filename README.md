@@ -17,18 +17,22 @@ This is a novel three-stage computer vision framework as a sustainable engineeri
    - [Error Level Analysis (ELA) Module](https://github.com/projjal2025/yolov8-ID-card/blob/main/README.md#1-error-level-analysis-ela-module)
    - [YOLOv8-based CPTBA Detection](https://github.com/projjal2025/yolov8-ID-card/blob/main/README.md#2-yolov8-based-cptba-detection)
    - [Tampering Field Localization](https://github.com/projjal2025/yolov8-ID-card/blob/main/README.md#3-tampering-field-localization)
-3. [Features](https://github.com/projjal2025/yolov8-ID-card/blob/main/README.md#-features)
-4. [Flow-diagram](https://github.com/projjal2025/yolov8-ID-card/blob/main/README.md#-flow-diagram)
+2. [Features](https://github.com/projjal2025/yolov8-ID-card/blob/main/README.md#-features)
+3. [Flow-diagram](https://github.com/projjal2025/yolov8-ID-card/blob/main/README.md#-flow-diagram)
+4. [Train and Test on your custom dataset](https://github.com/projjal2025/yolov8-ID-card/tree/main?tab=readme-ov-file#-train-and-test-on-your-custom-dataset)
+   - [Dataset preparation](https://github.com/projjal2025/yolov8-ID-card/tree/main?tab=readme-ov-file#1-dataset-preparation)
+   - [Labelling the dataset](https://github.com/projjal2025/yolov8-ID-card/tree/main?tab=readme-ov-file#2-labelling-the-dataset)
+   - [Google drive folder arrangement](https://github.com/projjal2025/yolov8-ID-card/tree/main?tab=readme-ov-file#3-google-drive-folder-arrangement)
 
 
 ## ✨ Introduction:
 This repository introduces a three-stage computer vision framework designed to validate ID cards by detecting Copy Paste Tampering Boundary Artefacts (CPTBA) signatures. These signatures are tell-tale signs of copy-paste forgery in crucial ID card fields. The framework operates as follows:
 
-### 1. Error Level Analysis (ELA) Module:
+### <ins>1. Error Level Analysis (ELA) Module:</ins>
    The initial stage employs an ELA module to analyze the ID card image for varying Discrete Cosine Transform (DCT) compression levels. Fake ID cards, often created by copying and pasting elements from different sources, exhibit these varying compression levels in tampered regions. The ELA module outputs an ELA image where CPTBA signatures and background inconsistencies are highlighted.
-### 2. YOLOv8-based CPTBA Detection:
+### <ins>2. YOLOv8-based CPTBA Detection:</ins>
    The second stage utilizes a YOLOv8 deep learning model to detect the highlighted CPTBA signatures within the ELA image.
-### 3. Tampering Field Localization:
+### <ins>3. Tampering Field Localization:</ins>
    The final stage leverages the CPTBA detection results from YOLOv8 to generate a refined bounding box, precisely localizing the tampered field in the original ID card image.
 This framework was developed and extensively tested using a custom dataset due to the absence of publicly available standard ID card image datasets. Our experiments demonstrate its viability and improved performance compared to standalone Error Level Analysis (ELA), a common copy-paste forgery detection technique.
 

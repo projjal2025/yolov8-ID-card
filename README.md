@@ -61,7 +61,7 @@ I had done the whole project on Google colab with using Google drive. So, I gave
 I also gave a map for folder arrangement below:
 <pre>
   <code>
-    <strong>Project_Name</strong>
+    <strong>Project_Root</strong>
     ├── <strong>train</strong>
     │   ├── <strong>images</strong> --> keep your images for training
     │   ├── <strong>labels</strong> --> keep your labels of images for training

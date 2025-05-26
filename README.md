@@ -57,7 +57,7 @@ As here I used the Yolov8 model for object detection so, here the bounding box a
 You can see the demo video [here](https://youtu.be/p0nR2YsCY_U?si=LLlsL14_8teorXTu).
 
 ### 3. <ins>Google drive folder arrangement:</ins>
-I had done the whole project on Google colab with using Google drive. So, I gave the full folder arrangement in the 'googleDrive' folder in this repository you can refer to them.<br/>
+I had done the whole project on Google colab with using Google drive. So, I gave the full folder arrangement in the 'project_root' folder in this repository you can refer to them.<br/>
 I also gave a map for folder arrangement below:
 <pre>
   <code>
@@ -75,7 +75,7 @@ I also gave a map for folder arrangement below:
     ├── <strong>runs</strong> --> yolov8 model will store the ELA images with predictions
     ├── <strong>classes.txt</strong> --> here all class names will be written for 'LabelImg' to annotate
     ├── <strong>data_custom.yaml</strong> --> here paths of 'train' and 'val' folders, number of classes and class names will be written to train the Yolov8 model.
-    ├── <strong>yolov8x.pt</strong> --> pre-trained model
+    ├── <strong>yolov8n.pt</strong> --> pre-trained model
     ├── <strong>ELA_Converter.ipynb</strong> --> program for converting real forgery images into ELA images for training
     ├── <strong>ID_card_testing.ipynb</strong> --> program for testing ELA module, Yolov8 detection module and localization module are included in this program
     ├── <strong>ID_card_training.ipynb</strong> --> program for training
@@ -83,3 +83,5 @@ I also gave a map for folder arrangement below:
   </code>
 </pre>
 
+### 4. <ins>Training:</ins>
+Note that you should annotate on the colored forgery images and keep those labellings in the 'labels' folder inside 'train' and 'val' folder and then convert the colored tampered images into ELA images by using  for training and validation

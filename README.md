@@ -57,29 +57,29 @@ As here I used the Yolov8 model for object detection so, here the bounding box a
 You can see the demo video [here](https://youtu.be/p0nR2YsCY_U?si=LLlsL14_8teorXTu).
 
 ### 3. <ins>Google drive folder arrangement:</ins>
-I had done the whole project on Google colab with using Google drive. So, I gave the full folder arrangement in the 'googleDrive' folder in this repository you can refer to them.
+I had done the whole project on Google colab with using Google drive. So, I gave the full folder arrangement in the 'googleDrive' folder in this repository you can refer to them.<br/>
+I also gave a map for folder arrangement below:
 <pre>
   <code>
-    Project_Name
-    ├── train
-    │   ├── images
-    │   ├── labels
-    ├── val
-    │   ├── images
-    │   ├── labels
-    ├── test
-    |   ├── real_image
-    │   ├── ELA_image
-    │   ├── predicted_image
-    ├── runs
-    ├── classes.txt
-    ├── data_custom.yaml
-    ├── yolov8n.pt
-    ├── yolov8x.pt
-    ├── ELA_Converter.ipynb
-    ├── ID_card_testing.ipynb
-    ├── ID_card_training.ipynb
-    └── weights.pt
+    <strong>Project_Name</strong>
+    ├── <strong>train</strong>
+    │   ├── <strong>images</strong> --> keep your images for training
+    │   ├── <strong>labels</strong> --> keep your labels of images for training
+    ├── <strong>val</strong>
+    │   ├── <strong>images</strong> --> keep your images for validation
+    │   ├── <strong>labels</strong> --> keep your labels of images for validation
+    ├── <strong>test</strong>
+    |   ├── <strong>real_image</strong> --> keep your images for testing
+    │   ├── <strong>ELA_image</strong> --> the testing program 'ID_card_testing.ipynb' will store the ELA images after converting
+    │   ├── <strong>predicted_image</strong> --> here the colored images will be stored after localization on the boundary artefacts 
+    ├── <strong>runs</strong> --> yolov8 model will store the ELA images with predictions
+    ├── <strong>classes.txt</strong> --> here all class names will be written for 'LabelImg' to annotate
+    ├── <strong>data_custom.yaml</strong> --> here paths of 'train' and 'val' folders, number of classes and class names will be written to train the Yolov8 model.
+    ├── <strong>yolov8x.pt</strong> --> pre-trained model
+    ├── <strong>ELA_Converter.ipynb</strong> --> program for converting real forgery images into ELA images for training
+    ├── <strong>ID_card_testing.ipynb</strong> --> program for testing ELA module, Yolov8 detection module and localization module are included in this program
+    ├── <strong>ID_card_training.ipynb</strong> --> program for training
+    └── <strong>weights.pt</strong> --> no need create this file, it will be created by Yolov8 after training
   </code>
 </pre>
 

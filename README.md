@@ -53,7 +53,7 @@ This framework was developed and extensively tested using a custom dataset due t
 Due to non-availability of a standard ID-card dataset, I created a dataset with the help of 130 students of my college. From 130 images, I created 105 forgery images consisted of **changed ID-photo, changed person name and changed person signature**.<br/>Now, 5 images are for testing and remaining 100 forgery images I divided them in **4 : 1** ratio for train and validation while training the Yolov8 model.<br/>For producing the forgery ID-card images I used [photopea.com](https://www.photopea.com/), it is a free alternative of Adobe photoshop, a web based application where you will get all greate features of Photoshop (Not promoting, it's truely amazing...👌)
 
 ### 2. <ins/>Labelling the dataset:</ins>
-As here I used the Yolov8 model for object detection so, here the bounding box annotation was needed. For annotation I used LabelImg tool, you can go to it's github repository [get here](https://github.com/HumanSignal/labelImg) and install accordingly. After that, keep the labelling data of train and validation images in the 'label' folder inside of 'train' and 'val' folder in your project root directory which will be later uploaded on Google drive. Also, before opening make sure a classes.txt file is ready which will be contained the class name whichever objects you want to be detected by Yolov8.<br/>
+As here I used the Yolov8 model for object detection so, here the bounding box annotation was needed. For annotation I used LabelImg tool, you can go to it's github repository [get here](https://github.com/HumanSignal/labelImg) and install accordingly. After that, keep the labelling data of train and validation images in the 'label' folder inside of 'train' and 'val' folder in your project root directory which will be later uploaded on Google drive. Also, before opening make sure a 'classes.txt' file is ready which will be contained the class name whichever objects you want to be detected by Yolov8.<br/>
 You can see the demo video [here](https://youtu.be/p0nR2YsCY_U?si=LLlsL14_8teorXTu).
 
 ### 3. <ins>Google drive folder arrangement:</ins>
@@ -84,4 +84,13 @@ I also gave a map for folder arrangement below:
 </pre>
 
 ### 4. <ins>Training:</ins>
-Note that you should annotate on the colored forgery images and keep those labellings in the 'labels' folder inside 'train' and 'val' folder and then convert the colored tampered images into ELA images by using  for training and validation
+Note that you should annotate on the colored forgery images and keep those labellings in the 'labels' folder inside 'train' and 'val' folder and then convert the colored tampered images into ELA images by using 'ELA_converter.ipynb' program for training and validation. Also keep the converted ELA image for training and validation in 'images' folder inside 'train' and 'val' folder.</br>
+After that create your 'data_custom.yaml' file based on your key classes of custom dataset and path of 'train' and 'val' folder. I have already added my 'data_custom.yaml' file you can refer them.</br>
+Then, open ID_card_training.ipynb' in Google colab and connect with GPU in Colab, after that run all cells in the program. After some time it will create the 'weights.pt' file and save in the 'project_root'.
+
+### 5. <ins>Testing:</ins>
+After training, for testing on some random images keep those colored images in 'real_image' folder inside of 'test' folder. Then run the 'ID_card_testing.ipynb' program with correct path of 'real_image', 'ELA_image' and 'predicted_image' inside the program. Also correctly load your trained weight file on your custom dataset.</br>
+Then run the program with connected GPU in Google colab.
+
+### 6. <ins>Prediction:</ins>
+After complete running the ID_card_testing.ipynb' program the prediction on ELA images will save in 'runs' folder and depending on those prediction the localized colored images will save in 'predicted_image' folder inside of 'test' folder.

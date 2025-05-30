@@ -6,8 +6,8 @@ This is a novel three-stage computer vision framework as a sustainable engineeri
 <br/>
 
 <div class="images" display="flex" justify-content="space-evenly">
-  <img src="https://github.com/projjal2025/yolov8-ID-card/blob/main/assets/2.png" width="48%" display="inline-block" alt="sample"/>
-  <img src="https://github.com/projjal2025/yolov8-ID-card/blob/main/assets/16.png" width="48%" display="inline-block" alt="sample"/>
+  <img src="https://github.com/projjal2025/yolov8-ID-card/blob/main/assets/2.png" width="48%" display="inline-block" alt="sample1"/>
+  <img src="https://github.com/projjal2025/yolov8-ID-card/blob/main/assets/16.png" width="48%" display="inline-block" alt="sample2"/>
   <p>** These images are samples of outcome of this framework. The sensitive informations are hidden for security reasons **</p>
 </div>
 
@@ -23,6 +23,9 @@ This is a novel three-stage computer vision framework as a sustainable engineeri
    - [Dataset preparation](https://github.com/projjal2025/yolov8-ID-card/tree/main?tab=readme-ov-file#1-dataset-preparation)
    - [Labelling the dataset](https://github.com/projjal2025/yolov8-ID-card/tree/main?tab=readme-ov-file#2-labelling-the-dataset)
    - [Google drive folder arrangement](https://github.com/projjal2025/yolov8-ID-card/tree/main?tab=readme-ov-file#3-google-drive-folder-arrangement)
+   - [Training](https://github.com/projjal2025/yolov8-ID-card?tab=readme-ov-file#4-training)
+   - [Testing](https://github.com/projjal2025/yolov8-ID-card?tab=readme-ov-file#5-testing)
+   - [Prediction](https://github.com/projjal2025/yolov8-ID-card?tab=readme-ov-file#6-prediction)
 
 
 ## ✨ Introduction:
